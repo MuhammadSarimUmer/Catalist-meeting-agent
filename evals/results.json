@@ -1,0 +1,264 @@
+[
+  {
+    "id": "E01",
+    "team": "ES2005",
+    "question": "What material did Team ES2005 choose for the remote's case, and did that choice change between meetings?",
+    "gold_answer": "Early on (meeting b) the casing was assumed to be cheap plastic; a rubbery material was then proposed, and in meeting c they decided on a spongy latex rubber, confirmed in meeting d.",
+    "agent_answer": "Team ES2005 first settled on a rubbery, bouncy material for the remote case in meeting b. In meeting c they changed to a disposable, health-conscious rubber to address safety and environmental concerns. The final material choice is the disposable rubber from meeting c, as no later meeting overrides it.",
+    "citations": [
+      {
+        "meeting_id": "ES2005b",
+        "quote": "What I thought as well about the material is um maybe not this kind of material, but maybe more like um this kind of rubbery material, it's a bit more bouncy, like you said they get chucked around a lot."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "partial",
+    "why": "Ends on rubber (correct) but misses the early cheap-plastic idea and calls a proposal in b a settled choice."
+  },
+  {
+    "id": "E02",
+    "team": "ES2012",
+    "question": "What power source did Team ES2012 end up using for their remote, and what did they consider before?",
+    "gold_answer": "They chose a long-lasting battery guaranteed for about five years. Before that they discussed a rechargeable battery with a dock, a sealed lithium-type battery, and solar cells with a backup battery.",
+    "agent_answer": "Team ES2012 finally settled on a long-term battery (a lithium-type cell expected to last about five to ten years) as the remote's power source. Earlier they debated several alternatives - a rechargeable battery or dock, a disposable long-life lithium battery, a hybrid solar-plus-battery system, and even a base-station power model.",
+    "citations": [
+      {
+        "meeting_id": "ES2012c",
+        "quote": "then uh people are more likely to change it anyway uh before i it runs out and um make an assumption that we we can aim for a battery that will last most people for uh we'll say at least five five ten years and"
+      },
+      {
+        "meeting_id": "ES2012b",
+        "quote": "You know, the the the battery will last know, five, ten years."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "right",
+    "why": "Long-term battery chosen, with the alternatives considered (rechargeable/dock, lithium, solar plus battery). Extra base-station option not checked."
+  },
+  {
+    "id": "E03",
+    "team": "ES2013",
+    "question": "What was the maximum production cost Team ES2013 worked with, and did their final design stay under it?",
+    "gold_answer": "The maximum was 12.50 Euros per remote. In meeting d the total cost was calculated as 9.20 (said 'nine Pounds twenty'), under the 12.50 allowed.",
+    "agent_answer": "The team set a maximum production cost of \u20ac12.50 per remote (target cost) and in the final meeting reported a total cost of \u00a39.20, which was below the allowed \u20ac12.50 budget.",
+    "citations": [
+      {
+        "meeting_id": "ES2013d",
+        "quote": "Uh we only need one of them. Um and the total cost has been calculated as nine Pounds twenty out of the twelve and a half we were allowed."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "right",
+    "why": "12.50 limit and final 9.20 total, both correct."
+  },
+  {
+    "id": "E04",
+    "team": "ES2015",
+    "question": "What power source did Team ES2015 choose, and what was their final operating cost compared with the 12.50 Euro limit?",
+    "gold_answer": "They chose kinetic energy (no batteries). The final operating cost was 12.20 Euros, just under the 12.50 Euro maximum.",
+    "agent_answer": "The team settled on kinetic energy as the remote's power source, and their final operating cost was \u20ac12.20, which is below the \u20ac12.50 limit.",
+    "citations": [
+      {
+        "meeting_id": "ES2015d",
+        "quote": "Yeah. Good work guys. So um our operating cost is twelve twenty Euros."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "right",
+    "why": "Kinetic, 12.20 vs 12.50, correct."
+  },
+  {
+    "id": "E05",
+    "team": "IS1000",
+    "question": "What selling price did Team IS1000 aim for, and did the target change later?",
+    "gold_answer": "The selling price was 25 Euros from the first meeting and it did not change; it was still the constraint in the last meeting.",
+    "agent_answer": "Team IS1000 initially set the selling price at twenty-five euros per remote (Speaker B, IS1000a) and later reaffirmed that the price remains fixed at twenty-five euros (Speaker C, IS1000d).",
+    "citations": [
+      {
+        "meeting_id": "IS1000a",
+        "quote": "Um our project uh finance uh thing. Uh when we are and when w you are uh going to design w uh we must keep in mind that the selling price of the product uh will be about twenty five Euros, so when"
+      },
+      {
+        "meeting_id": "IS1000d",
+        "quote": "But for us it's yeah we have a constraint that we need to sell at twenty five Euros."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 0.0,
+    "verdict": "right",
+    "why": "Both turns say 25 Euros, unchanged. Automatic check scored 0 only because the answer writes 'twenty-five'."
+  },
+  {
+    "id": "E06",
+    "team": "IS1001",
+    "question": "What shape did Team IS1001 choose for the remote, and what was the final production cost compared with the budget?",
+    "gold_answer": "A yellow banana-shaped remote with a rubber spongy cover and a wheel. The cost came to 10.7 Euros, within the 12.5 Euro budget.",
+    "agent_answer": "The team settled on a banana-shaped remote (Speaker A) and the final production cost is \u20ac10.7, which is below the \u20ac12.5 budget (Speaker A).",
+    "citations": [
+      {
+        "meeting_id": "IS1001d",
+        "quote": "So d let's start with the cost aspect so so I look at the aspect discussed last time, that is to say uh to have a standard battery, to have a yellow banana shaped uh case with uh a rubber material around it to be"
+      },
+      {
+        "meeting_id": "IS1001d",
+        "quote": "and uh also at the different aspect like having a wheel etcetera. And the cost ended to be ten point seven Euros. So which is uh good, because we had a price gap of twelve point five Euros."
+      }
+    ],
+    "loops": 1,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "right",
+    "why": "Banana shape and 10.7 vs 12.5, correct."
+  },
+  {
+    "id": "E07",
+    "team": "IS1004",
+    "question": "Did Team IS1004 keep solar cells in the design, and what power source did they settle on?",
+    "gold_answer": "No. In meeting d they said solar cells were not necessary any more and decided against them. They stuck with a battery.",
+    "agent_answer": "The team ultimately abandoned the solar-cell idea and settled on rechargeable batteries (charged via a base-station) as the power source.",
+    "citations": [
+      {
+        "meeting_id": "IS1004d",
+        "quote": "If I was gonna place them I'd put them on the on the top here since that's like uh the black bit but yeah I don't I really don't think it's necessary to have the solar cells anymore."
+      },
+      {
+        "meeting_id": "IS1004d",
+        "quote": "Oh yeah finally we say no. Okay so let's let's go let's go let go through all the lines. So hand dynamo. This something we didn't thought about."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 0.0,
+    "verdict": "right",
+    "why": "Abandoned solar, settled on battery. Automatic check scored 0 because the answer says 'batteries'."
+  },
+  {
+    "id": "E08",
+    "team": "IS1004",
+    "question": "What overall shape did Team IS1004 settle on for the remote, and did it change from the original idea?",
+    "gold_answer": "A banana shape. In meeting c they moved from a realistic yellow banana to a stylised banana (silver) to avoid looking niche or kitsch, with a base station.",
+    "agent_answer": "The team ended up choosing a palm-shaped remote (Speaker A asked for a shape of the palm) and this was a shift from the earlier vague idea of just \"fitting the hand\" without a specific form.",
+    "citations": [
+      {
+        "meeting_id": "IS1004b",
+        "quote": "Something with the shape of the palm?"
+      },
+      {
+        "meeting_id": "IS1004b",
+        "quote": "Okay. So fitting the hand doesn't mean much then."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 0.0,
+    "verdict": "wrong",
+    "why": "Answered 'palm-shaped'. The team chose a banana shape (stylised, silver). Retrieval or the answer step picked the wrong turns."
+  },
+  {
+    "id": "E09",
+    "team": "TS3005",
+    "question": "What energy source did Team TS3005 choose for the remote?",
+    "gold_answer": "Standard rechargeable batteries charged through a docking station; in the last meeting they confirmed they would use one battery.",
+    "agent_answer": "The team ultimately chose a battery (standard rechargeable batteries) as the remote's energy source.",
+    "citations": [
+      {
+        "meeting_id": "TS3005d",
+        "quote": "Yeah. I would do a battery we do. Right? A battery. One battery, right?"
+      }
+    ],
+    "loops": 2,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "right",
+    "why": "Standard rechargeable batteries, correct."
+  },
+  {
+    "id": "E10",
+    "team": "TS3005",
+    "question": "What material did Team TS3005 choose for the case?",
+    "gold_answer": "Hard rubber with a spongy feel, flexible enough but protecting the LCD screen.",
+    "agent_answer": "The team settled on a hard rubber for the remote's case - a spongy-feeling, durable rubber material.",
+    "citations": [
+      {
+        "meeting_id": "TS3005c",
+        "quote": "Uh hard rubber I think. That's the easy to ha uh to to uh"
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "right",
+    "why": "Hard, spongy-feeling rubber, correct."
+  },
+  {
+    "id": "E11",
+    "team": "TS3008",
+    "question": "How did Team TS3008 plan to power the remote, and was the plan settled?",
+    "gold_answer": "In meeting b they liked a rechargeable battery with a base station but would skip it if too costly. In meeting c one member preferred a basic battery over kinetic. In meeting d the costing included one battery and they discussed adding kinetic as well, so the plan was not clearly settled.",
+    "agent_answer": "Initially the team floated various ideas such as kinetic, solar or hand-dynamo power sources (e.g., C's basic-battery proposal in meeting c) but by the last meeting they agreed to use a single ordinary battery and discard the alternative sources. The final decision in meeting d was to include one standard battery and not use kinetic, solar or dynamo power, indicating the plan was settled.",
+    "citations": [
+      {
+        "meeting_id": "TS3008d",
+        "quote": "I think one battery is enough. We don't need kinetic, solar cells, hand dynamo."
+      }
+    ],
+    "loops": 2,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "wrong",
+    "why": "Said the plan was settled on one battery and no kinetic. In meeting d they still discussed doing both battery and kinetic, so the plan was not settled."
+  },
+  {
+    "id": "E12",
+    "team": "ES2013",
+    "question": "Who promised to find out the cost of the components for Team ES2013, and what did they report back?",
+    "gold_answer": "The industrial designer (Speaker B) said in meeting b they would do research for the next meeting. In meeting c they reported they had no costing information and that the two front-runners for power were the standard battery or kinetic.",
+    "agent_answer": "In meeting b, Speaker D asked who would determine the cost of the device's components, and in meeting c, Speaker A confirmed that Kate was assigned to look into the cost and feasibility of the various possibilities. By the final meeting, Speaker A reported that the total cost had been calculated at nine pounds and twenty pence, which was within their twelve-and-a-half-pound budget.",
+    "citations": [
+      {
+        "meeting_id": "ES2013b",
+        "quote": "ki some idea of how much it would cost to create a device that has these basic elements? Because then"
+      },
+      {
+        "meeting_id": "ES2013c",
+        "quote": "Kate was gonna look at cost and feasibility of the various possibilities that we discussed."
+      },
+      {
+        "meeting_id": "ES2013d",
+        "quote": "Uh we only need one of them. Um and the total cost has been calculated as nine Pounds twenty out of the twelve and a half we were allowed."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 0.0,
+    "verdict": "partial",
+    "why": "Final cost 9.20 is true, but it misses the key facts: the research promise and the 'no costing information' report in meeting c."
+  },
+  {
+    "id": "E13",
+    "team": "ES2013",
+    "question": "What did Team ES2013 decide about powering the remote?",
+    "gold_answer": "In meeting c they agreed to use kinetic energy if research showed it was feasible, and in meeting d they decided on kinetic energy, with a plastic case with rubber casing.",
+    "agent_answer": "The team did not specify a power source in the early meetings, but in the final meeting (ES2013d) they decided the remote would be powered by kinetic energy.",
+    "citations": [
+      {
+        "meeting_id": "ES2013d",
+        "quote": "Um we decided chip on print would be used. Um we would use plastic with a rubber casing, I think was the consensus, powered by kinetic energy."
+      }
+    ],
+    "loops": 0,
+    "citations_valid": true,
+    "facts_found": 1.0,
+    "verdict": "partial",
+    "why": "Final kinetic decision is correct, but wrongly says nothing was specified earlier; meeting c already agreed on kinetic if feasible."
+  }
+]

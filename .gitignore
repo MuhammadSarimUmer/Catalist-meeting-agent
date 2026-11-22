@@ -1,0 +1,25 @@
+cenv/
+.env
+__pycache__/
+data/*.db
+data/chroma/
+data/transcripts/
+data/probe_results.json
+data/cache/
+
+# personal study notes and client files (not for the repo)
+PLAN.md
+EXPLANATION.md
+Catalist_Agentic_AI_Intern_Build_Test*.pdf
+Catalist_AI_Intern_Build_Test_Data*.zip
+data/questions.json
+
+# editor, OS and scratch files
+*.pyc
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+_*.py
+_part*.md

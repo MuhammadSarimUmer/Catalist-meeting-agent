@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langgraph
+langsmith
+groq
+google-genai
+pydantic-settings
+python-dotenv
+numpy
+sentence-transformers
