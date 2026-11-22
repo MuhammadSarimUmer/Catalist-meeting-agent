@@ -23,7 +23,7 @@ def main() -> None:
     questions = [json.loads(l) for l in SRC.read_text(encoding="utf-8").splitlines() if l.strip()]
     questions = [q for q in questions if q["gold_answer"] != "TODO"]
     if not questions:
-        print("No questions with a gold_answer yet. Fill evals/my_questions.jsonl first (see PLAN.md, section 10).")
+        print("No questions with a gold_answer yet. Fill in the gold_answer fields in evals/my_questions.jsonl first.")
         return
 
     old = {r["id"]: r for r in json.loads(OUT.read_text("utf-8"))} if OUT.exists() else {}

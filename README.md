@@ -24,7 +24,7 @@ Built with **LangGraph** as a real state machine (route, retrieve, answer, verif
 4. **Verify (code):** for each turn id, code **copies** the best matching span out of the transcript and checks it (>= 6 words, exact, inside one turn). Missing citations or thin evidence send the run back to retrieve with wider evidence (max 3 tries).
 5. **Brief:** notes from every meeting *before the last one* go to the model; code attaches a verified quote to each bullet and drops bullets it cannot back.
 
-See [PLAN.md](PLAN.md) for the reasoning, measured limits, the full decision log and interview prep.
+See [WRITEUP.md](WRITEUP.md) for the reasoning, measured limits and scale, [evals/REPORT.md](evals/REPORT.md) for the eval results and failures, and [TEAM.md](TEAM.md) for a short overview.
 
 ## Project structure
 
@@ -58,7 +58,7 @@ python -m scripts.verify_answers # independent citation check against the raw fi
 
 Optional API: `uvicorn main:app --reload`, then `POST /ask {"question": "...", "team": "TS3012"}` or `GET /brief/TS3012`. Docs at `/docs`.
 
-Handy: `python -m scripts.find ES2005 battery --context 1` prints every turn of a team that mentions a word (for writing your own eval answers).
+Handy: `python -m scripts.find ES2005 battery --context 1` prints every turn of a team that mentions a word (used to check answers against the raw transcripts by hand).
 
 ## Environment variables
 
@@ -67,7 +67,7 @@ Handy: `python -m scripts.find ES2005 battery --context 1` prints every turn of 
 | `GROQ_API_KEY` | required | [console.groq.com](https://console.groq.com) |
 | `GOOGLE_API_KEY` | | [aistudio.google.com](https://aistudio.google.com) |
 | `EXTRACT_MODEL` | `gemini-3.1-flash-lite` | Bulk note extraction (15 requests/min free) |
-| `EXTRACT_FALLBACK_MODEL` | `openai/gpt-oss-20b` | Used if the primary fails |
+| `EXTRACT_FALLBACK_MODEL` | `gemini-3.5-flash-lite,openai/gpt-oss-20b` | Comma-separated, tried in order if the primary fails (for example when Gemini's 500 requests/day cap is used up) |
 | `EXTRACT_RPM` | `12` | Stay under the free limit |
 | `ANSWER_MODEL` | `openai/gpt-oss-120b` | Answers (few tokens per call) |
 | `EMBED_PROVIDER` | `local` | `local` = CPU, `gemini` = API (100 texts/min free) |
@@ -75,4 +75,4 @@ Handy: `python -m scripts.find ES2005 battery --context 1` prints every turn of 
 
 ## Limitations
 
-See [PLAN.md section 13](PLAN.md#13-known-weaknesses-honest-list). In short: quotes are always exact but can be only loosely relevant; short turns (< 6 words) cannot be cited; free-tier limits make extraction slow; each question must name one team.
+See the "Honest limits" section of [WRITEUP.md](WRITEUP.md) and the failures in [evals/REPORT.md](evals/REPORT.md). In short: quotes are always exact but can be only loosely relevant; short turns (< 6 words) cannot be cited; free-tier limits make extraction slow; each question must name one team.

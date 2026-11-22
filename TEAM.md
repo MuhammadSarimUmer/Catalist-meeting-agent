@@ -23,6 +23,7 @@ A short guide for reviewers. For setup details see `README.md`; for design, eval
 ```
 pip install -r requirements.txt
 copy .env.example .env        # then add your own keys
+# put the transcripts in data/transcripts/ and questions.json in data/ (not in the repo)
 python -m scripts.ingest
 python -m scripts.extract
 python -m scripts.run_answers
